@@ -2,8 +2,71 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 body {
-  background-color: antiquewhite;
-  color: brown;
-  text-align: center;
-  margin-top: 100px;
+  background-color: white;
 }
+
+.navbar-dark .navbar-brand {
+  content:url(https://i1.wp.com/www.authormedia.com/wp-content/uploads/2013/04/pinterest_badge_red.png?resize=800%2C675&ssl=1);
+  max-width: 5%;
+  max-height: 5%;
+}
+
+// .navbar {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+// }
+
+.cart-items {
+  height: 300px;
+  overflow: scroll;
+}
+
+.grey-box {
+  float: left;
+  margin: 2px;
+  width: 200px;
+  height: 200px;
+}
+
+#cart-thumb img {
+  height: 100px;
+}
+
+
+// #main-container {
+//   display: flex;
+//   flex-direction: column;
+//   margin: 0 auto;
+//   margin-top: 100px;
+//   align-content: center;
+
+//   #add-button {
+//     margin: 0 auto;
+//   }
+
+  
+//   #store {
+//     width: 90%;
+//     display: flex;
+//     flex-flow: row wrap;
+//     text-align: center;
+//     margin: auto;
+//     justify-content: center;
+
+//     .card {
+//       width: 300px;
+//       margin: 5px;
+
+//       .sale-badge {
+//         font-size: 1em;
+//       }
+//     }
+
+//     .table {
+//       margin: 10px;
+//       width: 80%;
+//       margin: 0 auto;
+//     }
+//   }
+// }
