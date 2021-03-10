@@ -1,6 +1,7 @@
 import pinBoardInfo from '../data/singleBoardData';
 import singleBoard from '../../components/singleBoard';
 import createPins from '../../components/pins';
+import { deletePin } from '../data/pinData';
 // import createBoards from '../../components/boards';
 
 const domEvents = () => {
@@ -13,6 +14,12 @@ const domEvents = () => {
         createPins(singleBoardObject.boardPins);
         singleBoard(singleBoardObject.board);
       });
+    }
+
+    // Delete Pins
+    if (e.target.id.includes('delete-pin')) {
+      const firebaseKey = e.target.id.split('--')[1];
+      deletePin(firebaseKey).then((pinsArray) => createPins(pinsArray));
     }
   });
 };

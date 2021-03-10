@@ -1,6 +1,5 @@
 const singleBoard = (boardObject) => {
-  document.querySelector('#header').innerHTML += `
-  <h1>${boardObject.title}</h1>`;
+  document.querySelector('#header').innerHTML += `<h2>${boardObject.title}</h2>`;
 };
 
 export default singleBoard;

@@ -1,7 +1,7 @@
 const navBar = () => {
   document.querySelector('#login-form-container').innerHTML = '';
   document.querySelector('#navigation').innerHTML = `
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark mb-4">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
      <a class="navbar-brand" id="Pintrest-Pic" href="#">Practicing Pintrest</a>
      <button
      class="navbar-toggler"
