@@ -4,8 +4,8 @@ import firebaseConfig from '../auth/apiKeys';
 const dbUrl = firebaseConfig.databaseURL;
 
 // Get Pins
-const getPins = () => new Promise((resolve, reject) => {
-  axios.get(`${dbUrl}/pins.json`)
+const getPins = (uid) => new Promise((resolve, reject) => {
+  axios.get(`${dbUrl}/pins.json?orderBy="uid"&equalTo="${uid}"`)
     .then((response) => resolve(Object.values(response.data)))
     .catch((error) => reject(error));
 });
@@ -18,9 +18,9 @@ const singleBoardPins = (boardId) => new Promise((resolve, reject) => {
 });
 
 // Delete Pins
-const deletePin = (firebaseKey) => new Promise((resolve, reject) => {
+const deletePin = (firebaseKey, uid) => new Promise((resolve, reject) => {
   axios.delete(`${dbUrl}/pins/${firebaseKey}.json`)
-    .then(() => getPins().then((pinsArray) => resolve(pinsArray)))
+    .then(() => getPins(uid).then((pinsArray) => resolve(pinsArray)))
     .catch((error) => reject(error));
 });
 

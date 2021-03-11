@@ -3,13 +3,13 @@ import { getPins } from '../data/pinData';
 import createBoards from '../../components/boards';
 import createPins from '../../components/pins';
 
-const navEvents = () => {
+const navEvents = (uid) => {
   document.querySelector('#boards-link').addEventListener('click', () => {
-    getBoards().then((boardsArray) => createBoards(boardsArray));
+    getBoards(uid).then((boardsArray) => createBoards(boardsArray));
   });
 
   document.querySelector('#pins-link').addEventListener('click', () => {
-    getPins().then((pinsArray) => createPins(pinsArray));
+    getPins(uid).then((pinsArray) => createPins(pinsArray));
   });
 };
 

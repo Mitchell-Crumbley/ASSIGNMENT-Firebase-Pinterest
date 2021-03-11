@@ -1,106 +1,82 @@
-{
-  "boards" : {
-    "-MVJMSMCWSy0EEDWZHKz" : {
-      "firebaseKey" : "-MVJMSMCWSy0EEDWZHKz",
-      "image" : "http://dummyimage.com/136x214.bmp/cc0000/ffffff",
-      "title" : "Minuscule: Valley of the Lost Ants (Minuscule - La vallée des fourmis perdues)"
-    },
-    "-MVJMSMDB75948_PBKvm" : {
-      "firebaseKey" : "-MVJMSMDB75948_PBKvm",
-      "image" : "http://dummyimage.com/206x100.jpg/dddddd/000000",
-      "title" : "The Virginian"
-    },
-    "-MVJMSMEsJNfzcxGyU68" : {
-      "firebaseKey" : "-MVJMSMEsJNfzcxGyU68",
-      "image" : "http://dummyimage.com/219x129.jpg/dddddd/000000",
-      "title" : "Boyfriends and Girlfriends (a.k.a. My Girlfriend's Boyfriend) (L'ami de mon amie)"
-    },
-    "-MVJMSMFd5Q8szxFCl0w" : {
-      "firebaseKey" : "-MVJMSMFd5Q8szxFCl0w",
-      "image" : "http://dummyimage.com/139x146.jpg/ff4444/ffffff",
-      "title" : "Magus, The"
-    },
-    "-MVJMSMHxrpwOQjPVXWh" : {
-      "firebaseKey" : "-MVJMSMHxrpwOQjPVXWh",
-      "image" : "http://dummyimage.com/214x140.jpg/cc0000/ffffff",
-      "title" : "Rink, The"
-    },
-    "-MVJMSMIBWWKsTFQ-2Hi" : {
-      "firebaseKey" : "-MVJMSMIBWWKsTFQ-2Hi",
-      "image" : "http://dummyimage.com/178x209.bmp/ff4444/ffffff",
-      "title" : "Great Debaters, The"
-    }
-  },
-  "pins" : {
+ {
     "-MVJNkMOn9NG32vaWpyv" : {
       "board_id" : "-MVJMSMCWSy0EEDWZHKz",
       "description" : "Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.",
       "firebaseKey" : "-MVJNkMOn9NG32vaWpyv",
       "image" : "http://dummyimage.com/114x108.png/5fa2dd/ffffff",
-      "title" : "Heartless"
+      "title" : "Heartless",
+      "uid" : "gE3kqtRy2fTMERv6bjaeAhWIZ113"
     },
     "-MVJNkMQLGVNWwQZqx_8" : {
       "board_id" : "Selinda",
       "description" : "Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum.",
       "firebaseKey" : "-MVJNkMQLGVNWwQZqx_8",
       "image" : "http://dummyimage.com/231x108.jpg/dddddd/000000",
-      "title" : "Lust, Caution (Se, jie)"
+      "title" : "Lust, Caution (Se, jie)",
+      "uid" : "gE3kqtRy2fTMERv6bjaeAhWIZ113"
     },
     "-MVJNkMSaQYuijcmBqkp" : {
       "board_id" : "-MVJMSMDB75948_PBKvm",
       "description" : "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
       "firebaseKey" : "Arabele",
       "image" : "http://dummyimage.com/242x159.png/5fa2dd/ffffff",
-      "title" : "Room 237"
+      "title" : "Room 237",
+      "uid" : "gE3kqtRy2fTMERv6bjaeAhWIZ113"
     },
     "-MVJNkMUQd_XUIKxC_6R" : {
       "board_id" : "Rosabella",
       "description" : "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
       "firebaseKey" : "-MVJNkMUQd_XUIKxC_6R",
       "image" : "http://dummyimage.com/127x111.png/dddddd/000000",
-      "title" : "Breakfast Club, The"
+      "title" : "Breakfast Club, The",
+      "uid" : "gE3kqtRy2fTMERv6bjaeAhWIZ113"
     },
     "-MVJNkM_hSsKaxrSHY9i" : {
       "board_id" : "-MVJMSMFd5Q8szxFCl0w",
       "description" : "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue.",
       "firebaseKey" : "-MVJNkM_hSsKaxrSHY9i",
       "image" : "http://dummyimage.com/185x177.bmp/dddddd/000000",
-      "title" : "Black Stallion Returns, The"
+      "title" : "Black Stallion Returns, The",
+      "uid" : "gE3kqtRy2fTMERv6bjaeAhWIZ113"
     },
     "-MVJNkMbth-Frf4SXyER" : {
       "board_id" : "-MVJMSMFd5Q8szxFCl0w",
       "description" : "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.",
       "firebaseKey" : "-MVJNkMbth-Frf4SXyER",
       "image" : "http://dummyimage.com/156x148.jpg/dddddd/000000",
-      "title" : "National Treasure: Book of Secrets"
+      "title" : "National Treasure: Book of Secrets",
+      "uid" : "gE3kqtRy2fTMERv6bjaeAhWIZ113"
     },
     "-MVJNkMdmOw6RWDGdRTU" : {
       "board_id" : "-MVJMSMHxrpwOQjPVXWh",
       "description" : "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique.",
       "firebaseKey" : "-MVJNkMdmOw6RWDGdRTU",
       "image" : "http://dummyimage.com/123x165.png/5fa2dd/ffffff",
-      "title" : "Gun the Man Down"
+      "title" : "Gun the Man Down",
+      "uid" : "gE3kqtRy2fTMERv6bjaeAhWIZ113"
     },
     "-MVJNkMeK_jmXkt2Zg2h" : {
       "board_id" : "-MVJNkMdmOw6RWDGdRTU",
       "description" : "In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo.",
       "firebaseKey" : "-MVJNkMeK_jmXkt2Zg2h",
       "image" : "http://dummyimage.com/202x204.jpg/5fa2dd/ffffff",
-      "title" : "Can't Buy Me Love"
+      "title" : "Can't Buy Me Love",
+      "uid" : "gE3kqtRy2fTMERv6bjaeAhWIZ113"
     },
     "-MVJNkMgR0ZbK-ElGN6X" : {
       "board_id" : "-MVJMSMIBWWKsTFQ-2Hi",
       "description" : "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend.",
       "firebaseKey" : "-MVJNkMgR0ZbK-ElGN6X",
       "image" : "http://dummyimage.com/235x237.png/ff4444/ffffff",
-      "title" : "Tycoon (Oligarkh)"
+      "title" : "Tycoon (Oligarkh)",
+      "uid" : "gE3kqtRy2fTMERv6bjaeAhWIZ113"
     },
     "-MVJNkMi5e_S9bDBAXul" : {
       "board_id" : "-MVJMSMIBWWKsTFQ-2Hi",
       "description" : "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
       "firebaseKey" : "-MVJNkMi5e_S9bDBAXul",
       "image" : "http://dummyimage.com/243x226.jpg/5fa2dd/ffffff",
-      "title" : "Little Accidents"
+      "title" : "Little Accidents",
+      "uid" : "gE3kqtRy2fTMERv6bjaeAhWIZ113"
     }
   }
-}

@@ -6,13 +6,13 @@ import { getBoards } from '../helpers/data/boardData';
 import createBoards from '../components/boards';
 import navEvents from '../helpers/Events/navBarEvents';
 
-const startApp = () => {
+const startApp = (userObject) => {
   domBuilder();
   navBar();
-  navEvents();
-  domEvents();
+  domEvents(userObject.uid);
+  navEvents(userObject.uid);
   logoutButton();
-  getBoards().then((boards) => createBoards(boards));
+  getBoards(userObject.uid).then((boards) => createBoards(boards));
 };
 
 export default startApp;
