@@ -16,7 +16,7 @@ import {
 const domEvents = (uid) => {
   document.querySelector('body').addEventListener('click', (e) => {
     // Show Pins related to a Board as it's clicked
-    if (e.target.id.includes('show-pins-btn')) {
+    if (e.target.id.includes('card-body')) {
       const boardId = e.target.id.split('--')[1];
       console.warn(boardId);
       pinBoardInfo(boardId).then((singleBoardObject) => {

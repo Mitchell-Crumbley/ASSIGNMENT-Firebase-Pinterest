@@ -6,7 +6,7 @@ const createBoards = (array) => {
 
   array.forEach((item) => {
     document.querySelector('#display-section').innerHTML += `<div class="card" id="board-card">
-    <div class="card-body" style="height: 300px;">
+    <div id="card-body--${item.firebaseKey}" class="card-body" style="height: 300px;">
       <h5 class="card-title">${item.title}</h5>
       <hr>
       <img id="board-img" src="${item.image}">
