@@ -1,8 +1,8 @@
 const createBoards = (array) => {
-  document.querySelector('#header').innerHTML = `
-  <h1>Boards</h1>`;
-  document.querySelector('#display-section').innerHTML = '';
+  document.querySelector('#header').innerHTML = `<h1>
+  Boards</h1>`;
   document.querySelector('#add-button').innerHTML = '<button class="btn btn-danger btn-lg mb-4" id="add-board-btn">Create Board</button>';
+  document.querySelector('#display-section').innerHTML = '';
 
   array.forEach((item) => {
     document.querySelector('#display-section').innerHTML += `<div class="card" id="board-card">

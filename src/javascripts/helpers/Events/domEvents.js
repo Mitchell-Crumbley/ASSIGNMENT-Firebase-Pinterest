@@ -2,11 +2,16 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 import { deleteBoardPins, pinBoardInfo } from '../data/singleBoardData';
 import singleBoard from '../../components/singleBoard';
+import formModal from '../../components/formModal';
 import createPins from '../../components/pins';
-import { deletePin } from '../data/pinData';
 import createBoards from '../../components/boards';
 import createBoardForm from './createBoardForm';
+import createPinForm from './createPinsForm';
+import editPinForm from './updatePinsForm';
 import { addBoards } from '../data/boardData';
+import {
+  addPins, deletePin, getSinglePin, updatePin
+} from '../data/pinData';
 
 const domEvents = (uid) => {
   document.querySelector('body').addEventListener('click', (e) => {
@@ -34,6 +39,42 @@ const domEvents = (uid) => {
         uid: firebase.auth().currentUser.uid,
       };
       addBoards(boardObject, uid).then((boardsArray) => createBoards(boardsArray));
+    }
+
+    // Get info from the Pin
+    if (e.target.id.includes('submit-pin')) {
+      e.preventDefault();
+      const pinObject = {
+        title: document.querySelector('#title').value,
+        image: document.querySelector('#image').value,
+        description: document.querySelector('#description').value,
+        board_id: document.querySelector('#board').value,
+        uid: firebase.auth().currentUser.uid,
+      };
+      addPins(pinObject, uid).then((pinsArray) => createPins(pinsArray));
+    }
+    // CLICK EVENT FOR ADDING PIN FORM
+    if (e.target.id.includes('add-pin-btn')) {
+      createPinForm();
+    }
+
+    // CLICK EVENT FOR SHOWING MODAL TO EDIT PIN
+    if (e.target.id.includes('edit-pin-btn')) {
+      const firebaseKey = e.target.id.split('--')[1];
+      formModal('Edit Pin');
+      getSinglePin(firebaseKey).then((pinObject) => editPinForm(pinObject));
+    }
+
+    // // CLICK EVENT FOR EDITING PIN
+    if (e.target.id.includes('update-pin')) {
+      const firebaseKey = e.target.id.split('--')[1];
+      e.preventDefault();
+      const pinObject = {
+        board_id: document.querySelector('#board').value,
+      };
+      updatePin(firebaseKey, pinObject, uid).then((pinsArray) => createPins(pinsArray));
+
+      $('#formModal').modal('toggle');
     }
 
     // Delete Pins

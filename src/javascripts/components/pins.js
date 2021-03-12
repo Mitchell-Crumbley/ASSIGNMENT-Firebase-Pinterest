@@ -1,6 +1,9 @@
 const createPins = (array) => {
-  document.querySelector('#header').innerHTML = '';
+  document.querySelector('#header').innerHTML = `<h2>
+  Pins</h2>`;
+  document.querySelector('#add-button').innerHTML = '<button class="btn btn-outline-danger mb-4" id="add-pin-btn">Create Pin</button>';
   document.querySelector('#display-section').innerHTML = '';
+  document.querySelector('#form-container').innerHTML = '';
 
   array.forEach((item) => {
     document.querySelector('#display-section').innerHTML += `<div class="card" id="pin-card">
@@ -10,7 +13,7 @@ const createPins = (array) => {
       <hr>
       <p>${item.description}</p>
       <hr>
-      <button class="btn btn-outline-danger" data-toggle="modal" data-target="#formModal" id="edit-board-btn^^${item.firebaseKey}">Edit Pin</button>
+      <button class="btn btn-outline-danger" data-toggle="modal" data-target="#formModal" id="edit-pin-btn--${item.firebaseKey}">Edit Pin</button>
       <button class="btn btn-outline-danger" id="delete-pin--${item.firebaseKey}">Delete Pin</button>
     </div>
   </div>`;
