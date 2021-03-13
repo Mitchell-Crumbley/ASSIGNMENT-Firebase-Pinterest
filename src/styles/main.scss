@@ -7,10 +7,14 @@ body {
 
 .navbar-dark .navbar-brand {
   content:url(https://i1.wp.com/www.authormedia.com/wp-content/uploads/2013/04/pinterest_badge_red.png?resize=800%2C675&ssl=1);
-  max-width: 2%;
-  max-height: 2%;
+  width: 75px; 
+  height: 75px;
 }
 
+#google-auth {
+  display: flex;
+  justify-content: flex-end;
+}
 
 #logout-button, #login-button {
   margin-left: auto;
