@@ -2,71 +2,71 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 body {
-  background-color: white;
+  background-color: #161b22;;
 }
 
 .navbar-dark .navbar-brand {
   content:url(https://i1.wp.com/www.authormedia.com/wp-content/uploads/2013/04/pinterest_badge_red.png?resize=800%2C675&ssl=1);
-  max-width: 5%;
-  max-height: 5%;
-}
-
-// .navbar {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-between;
-// }
-
-.cart-items {
-  height: 300px;
-  overflow: scroll;
-}
-
-.grey-box {
-  float: left;
-  margin: 2px;
-  width: 200px;
-  height: 200px;
-}
-
-#cart-thumb img {
-  height: 100px;
+  max-width: 2%;
+  max-height: 2%;
 }
 
 
-// #main-container {
-//   display: flex;
-//   flex-direction: column;
-//   margin: 0 auto;
-//   margin-top: 100px;
-//   align-content: center;
+#logout-button, #login-button {
+  margin-left: auto;
+}
 
-//   #add-button {
-//     margin: 0 auto;
-//   }
+#add-button {
+  text-align: center;
+}
 
-  
-//   #store {
-//     width: 90%;
-//     display: flex;
-//     flex-flow: row wrap;
-//     text-align: center;
-//     margin: auto;
-//     justify-content: center;
+h1 {
+  text-align: center;
+  color: #58a6ff;
+  text-shadow: 2px 2px black;
+}
 
-//     .card {
-//       width: 300px;
-//       margin: 5px;
+h2 {
+  text-align: center;
+  color: #58a6ff;
+  text-shadow: 2px 2px black;
+}
 
-//       .sale-badge {
-//         font-size: 1em;
-//       }
-//     }
+h5 {
+  color:#58a6ff;
+  text-shadow: 1px 2px black;
+}
 
-//     .table {
-//       margin: 10px;
-//       width: 80%;
-//       margin: 0 auto;
-//     }
-//   }
-// }
+#board-img {
+  width: 15rem;
+  object-fit: cover;
+  margin: 0;
+  border-radius: 15px;
+}
+
+#board-card {
+  width: 45rem;
+  text-align: left;
+  border: none;
+}
+
+#pin-img {
+  width: 15rem;
+  object-fit: cover;
+  margin: 0;
+  border-radius: 15px;
+}
+
+#pin-card {
+  // margin: 1em;
+  text-align: left;
+  border: none;
+}
+
+.card-body {
+  box-shadow: 5px 7px  #484f58;
+  }
+
+.button {
+  box-shadow: 5px 7px rgba(255, 211, 34, 0.898);
+}
