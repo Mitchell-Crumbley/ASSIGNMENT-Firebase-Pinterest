@@ -33,7 +33,7 @@ const domEvents = (uid) => {
 
     // GET Info from board Form
     if (e.target.id.includes('submit-board')) {
-      e.preventDefault();
+      // e.preventDefault();
       const boardObject = {
         title: document.querySelector('#title').value,
         image: document.querySelector('#image').value,
