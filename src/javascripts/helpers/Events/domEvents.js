@@ -12,6 +12,7 @@ import { addBoards } from '../data/boardData';
 import {
   addPins, deletePin, getSinglePin, updatePin
 } from '../data/pinData';
+import describePinForm from './describePin';
 
 const domEvents = (uid) => {
   document.querySelector('body').addEventListener('click', (e) => {
@@ -63,6 +64,13 @@ const domEvents = (uid) => {
       const firebaseKey = e.target.id.split('--')[1];
       formModal('Edit Pin');
       getSinglePin(firebaseKey).then((pinObject) => editPinForm(pinObject));
+    }
+
+    if (e.target.id.includes('details-btn')) {
+      const firebaseKey = e.target.id.split('--')[1];
+      formModal('Description');
+      // getSinglePin(firebaseKey).then((pinObject) => editPinForm(pinObject));
+      getSinglePin(firebaseKey).then((pinObject) => describePinForm(pinObject));
     }
 
     // // CLICK EVENT FOR EDITING PIN
