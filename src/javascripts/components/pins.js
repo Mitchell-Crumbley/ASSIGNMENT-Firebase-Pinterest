@@ -1,6 +1,6 @@
 const createPins = (array) => {
   document.querySelector('#header').innerHTML = `<h1>
-  Pins</h1>`;
+  Pins > Swords </h1>`;
   document.querySelector('#add-button').innerHTML = '<button class="btn btn-outline-danger mb-4" id="add-pin-btn">Create Pin</button>';
   document.querySelector('#display-section').innerHTML = '';
   document.querySelector('#form-container').innerHTML = '';
