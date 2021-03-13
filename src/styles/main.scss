@@ -4,6 +4,9 @@
 body {
   background-color: #161b22;
   transition:all 2s;
+  background-image: url(https://i.pinimg.com/originals/4e/5e/05/4e5e05d394178cc2ce32b06e886310fa.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .navbar-dark .navbar-brand {
@@ -57,6 +60,10 @@ h5 {
   text-align: left;
   border: none;
   transition: width 2s;
+}
+
+#board-card:hover {
+  transition: scale(1.1);
 }
 
 #board-card:hover {
